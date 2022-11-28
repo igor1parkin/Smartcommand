@@ -1,6 +1,12 @@
 # SmartCommand
 
 
+
+## Проблема с композером 
+Видимо где-то допустил ошибку и библиотека перестала адекватно прикручиваться к example.php - если не успею попровавить прошу скачать и распоковать файл version_without_compose.zip для проверки работоспособности 
+
+НЕпосредственно файлы библиотеки расположены в папке ```src```
+
 ## Запуск команды 
 ```javascript
 php example.php command_name {verbose,overwrite} [log_file=app.log] {unlimited} [methods={create,update,delete}] [paginate=50] {log}
@@ -15,9 +21,6 @@ php example.php command_name {help}
 ```javascript
 php example.php
 ```
-
-## Проблема с композером 
-Видимо где-то допустил ошибку и библиотека перестала адекватно прикручиваться к example.php - если не успею попровавить прошу скачать и распоковать файл version_without_compose.zip для проверки работоспособности 
 
 ## Problem with parsing
 ```javascript
