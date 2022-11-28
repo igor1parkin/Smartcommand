@@ -1,0 +1,19 @@
+{
+    "name": "igor1parkin/smartcommand",
+    "description": "Was created for test exercises",
+    "type": "library",
+    "license": "mot",
+    "autoload": {
+        "psr-4": {
+            "Igor1parkin\\Smartcommand\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Igor Parkin",
+            "email": "igor1parkin@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
