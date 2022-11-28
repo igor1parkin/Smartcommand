@@ -1,6 +1,23 @@
 # SmartCommand
 
 
+## Запуск команды 
+```javascript
+php example.php command_name {verbose,overwrite} [log_file=app.log] {unlimited} [methods={create,update,delete}] [paginate=50] {log}
+```
+
+## Вывод help'a команды
+```javascript
+php example.php command_name {help}
+```
+
+## Вывод help'a команд
+```javascript
+php example.php
+```
+
+## Проблема с композером 
+Видимо где-то допустил ошибку и библиотека перестала адекватно прикручиваться к example.php - если не успею попровавить прошу скачать и распоковать файл version_without_compose.zip для проверки работоспособности 
 
 ## Problem with parsing
 ```javascript
