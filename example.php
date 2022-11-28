@@ -1,9 +1,7 @@
 <?php
 
-use igor1parkin\SmartCommand\CommandHandler;
-
 spl_autoload_register(function($class){
-    include'src/'.$class.'.php';
+    include'library/'.$class.'.php';
 });
 
 spl_autoload_register(function($class){
@@ -49,4 +47,3 @@ foreach ($commandHandler->getCommandList() as $command){
 }
 
 echo "Undefined command";
-
