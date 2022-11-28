@@ -1,7 +1,5 @@
 <?php
 
-use igor1parkin\SmartCommand\SmartCommand;
-
 class SimpleCommand extends SmartCommand
 {
     public function execute(): void
