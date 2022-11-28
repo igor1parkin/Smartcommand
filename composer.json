@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Igor1parkin\\Smartcommand\\": "src/"
+            "igor1parkin\\Smartcommand\\": "src/"
         }
     },
     "authors": [
