@@ -10,8 +10,6 @@ spl_autoload_register(function($class){
     include'commands/'.$class.'.php';
 });
 
-//require_once(__DIR__ . '/vendor/autoload.php');
-
 $commandHandler = new CommandHandler();
 
 $commandHandler->addToCommandList(
