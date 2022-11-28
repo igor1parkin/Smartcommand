@@ -11,7 +11,7 @@ php example.php command_name {verbose,overwrite} [log_file=app.log] {unlimited} 
 php example.php command_name {help}
 ```
 
-## Вывод help'a команд
+## Вывод команд
 ```javascript
 php example.php
 ```
