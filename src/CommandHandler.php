@@ -1,7 +1,5 @@
 <?php
 
-namespace igor1parkin\SmartCommand;
-
 class CommandHandler
 {
     private array $commandList = [];
@@ -36,16 +34,15 @@ class CommandHandler
         }
     }
 
-    /*
-* Костыль т.к. возникла проблема с парсингом агрумента {arg1,arg2} - массив $argv возвращает как ['arg1', 'arg2']
-* а {arg1, arg2} как ['{arg1', 'arg2}']
-*/
+    /**
+     * Костыль т.к. возникла проблема с парсингом агрумента {arg1,arg2} - массив $argv возвращает как ['arg1', 'arg2']
+     * а {arg1, arg2} как ['{arg1', 'arg2}']
+     */
     public function parseArguments(): array
     {
         $args = $_SERVER['argv'];
         $arguments = [];
         for ($i = 2; $i <= count($args) - 1; $i++) {
-            //if (isArg($args[$i])) {
             if ($this->isNotOption($args[$i])) {
                 $arguments[] = preg_replace('#[{}]+#', '', $args[$i]);
             }
@@ -59,7 +56,10 @@ class CommandHandler
         return str_contains($inputString, "{") || str_contains($inputString, "}");
     }
 
-//Решил использовать эту функцию т.к важно отфильтровать [name={value1,value2,value3}] isArg() для этого не подошёл
+
+    /**
+     * Решил использовать эту функцию т.к важно отфильтровать [name={value1,value2,value3}] isArg() для этого не подошёл
+     */
     private function isNotOption(string $inputString): bool
     {
         return mb_substr($inputString, 0, 1) !== "[" && mb_substr($inputString, -1, 1) !== "]";
@@ -70,7 +70,6 @@ class CommandHandler
         $args = $_SERVER['argv'];
         $options = [];
         foreach ($args as $arg) {
-            // echo $arg;
             preg_match('/(?<=\[)(.+?)(?=\])/', $arg, $matches);
             if ($matches) {
                 $optionValue = explode("=", $matches[0]);
