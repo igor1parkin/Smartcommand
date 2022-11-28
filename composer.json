@@ -20,6 +20,6 @@
           "url": "https://github.com/igor1parkin/smartcommand.git"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {}
 }
