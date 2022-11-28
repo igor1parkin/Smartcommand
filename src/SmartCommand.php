@@ -1,7 +1,5 @@
 <?php
 
-namespace igor1parkin\SmartCommand;
-
 abstract class SmartCommand
 {
     public function __construct(
@@ -12,33 +10,21 @@ abstract class SmartCommand
     ) {
     }
 
-    /**
-     * @return string
-     */
     public function getCommandName(): string
     {
         return $this->commandName;
     }
 
-    /**
-     * @return string
-     */
     public function getHelp(): string
     {
         return $this->help;
     }
 
-    /**
-     * @return array
-     */
     public function getOptions(): array
     {
         return $this->options;
     }
 
-    /**
-     * @return array
-     */
     public function getArguments(): array
     {
         return $this->arguments;
