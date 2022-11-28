@@ -14,6 +14,12 @@
             "email": "igor1parkin@gmail.com"
         }
     ],
+    "repositories": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/igor1parkin/smartcommand.git"
+        }
+    ],
     "minimum-stability": "dev",
     "require": {}
 }
