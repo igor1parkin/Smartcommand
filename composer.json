@@ -16,7 +16,7 @@
     ],
     "repositories": [
         {
-          "type": "vcs",
+          "type": "git",
           "url": "https://github.com/igor1parkin/smartcommand.git"
         }
     ],
