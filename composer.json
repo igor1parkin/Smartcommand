@@ -2,7 +2,7 @@
     "name": "igor1parkin/smartcommand",
     "description": "Was created for test exercises",
     "type": "library",
-    "license": "mot",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Igor1parkin\\Smartcommand\\": "src/"
